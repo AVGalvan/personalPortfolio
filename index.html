@@ -5,18 +5,19 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Axel's Portfolio</title>
+  <link rel="stylesheet" href="resources/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
 </head>
-<body>
+<body id="home">
   
   <header> <!--Navbar-->
     <nav>
-      <h2>Axel Galvan</h2>
-
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact</a></li>
+        <li style="background-color: #ae7100;"><a href="#">Home</a></li>
+        <li><a href="about/about.html">About</a></li>
+        <li><a href="projects/projectGenerator.html">Projects</a></li>
       </ul>
     </nav>
   </header> <!--End of Navbar-->
@@ -24,18 +25,21 @@
 
   <main> <!--Beginning of main page content-->
     <div id="intro" class="banner"> <!--intro banner-->
-      <h1>Howdy, I'm <br> Axel Galvan</h1>
-      <p>Web developer</p>
-    </div>
+      <img src="resources/images/selfieProfilePicCropped.jpg" alt="portrait picture of Axel Galvan" id="profilePic">
 
-    <div id="randomProjectGenerator">
-      <p>Take a look at what I can do!</p>
-      <img src="resources/images/placeholder2400x2400.png" alt="placeholder image" width="400px">
-      <button id="generateProject">New Project</button>
-      
+      <div id="greeting">
+        <h1>Howdy, I'm <br> Axel Galvan</h1>
+        <hr>
+        <img src="resources/images/selfieProfilePicCropped.jpg" alt="portrait picture of Axel Galvan" id="profilePic2">
+        <p>Web developer</p>
+      </div>
     </div>
-
+    <img id="logo" src="resources/images/html5-js-css3-logo.png" alt="logos of html5 javascript and css3">
   </main>
+
+  <footer>
+    <p>Please contact me at <a href="mailto:axelgalvan0126@gmail.com">axelgalvan0126@gmail.com</a></p>
+  </footer>
   
 </body>
 </html>

@@ -1,0 +1,223 @@
+html{
+  box-sizing: border-box;
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: #222222;
+  text-align: center;
+}
+
+body{
+  margin: 0;
+  background-color: #222222;
+}
+nav{
+  background-color: #d4b400;
+}
+
+nav ul{
+  height: 3.3rem;
+  display: flex;
+  list-style: none;
+  margin-top: 0;
+  padding-left: 0;
+  justify-content: right;
+}
+
+nav li:hover{
+  background-color: #ba9e00;
+}
+
+ul a{
+  text-align: center;
+  display: inline-block;
+  padding: 14px 25px;
+}
+
+nav a{
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 510;
+}
+
+#intro{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  color: white;
+  margin: 50px auto 0px;
+  max-width: 90%;
+}
+
+h1{
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#intro p{
+  width: fit-content;
+  margin: auto auto 20px auto;
+  font-size: 3.5rem;
+}
+
+#logo{
+  display: block;
+  margin: 0 auto;
+  max-width: 245px;
+}
+
+#greeting{
+  width: 60%;
+  height: fit-content;
+  text-align: center;
+}
+
+#profilePic{
+  display: inline-block;
+  width: 40%;
+  height: auto;
+  border: solid 1px white;
+  border-radius: 50%;
+  margin-right: 50px;
+}
+#profilePic2{
+  display: none;
+}
+
+h2{
+  color: white;
+  text-align: center;
+  font-size: 2.7rem;
+  margin-bottom: 15px;
+}
+
+.yellow{
+  color: #d4b400;
+}
+
+.white {
+  color: white;
+}
+
+/* media query styling for the home page */
+@media screen and (max-width: 1002px) {
+  #profilePic{
+    display: none;
+  }
+  
+  #profilePic2{
+    display:inline-block;
+    width: 80%;
+    border: solid white 2px;
+    margin-bottom: 20px;
+  }
+
+  hr{
+    visibility: hidden;
+  }
+
+  #greeting{
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 602px){
+  #greeting h1 {
+    font-size: 3rem;
+  }
+
+  #greeting p {
+    font-size: 2rem;
+  }
+}
+
+#presentation{
+  margin-top: 60px;
+  font-size: 3rem;
+}
+
+#randomProjectGenerator{
+  display: flex;
+  margin-top: 50px;
+  margin: 50px auto 0;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 80%;
+}
+
+#randomProjectGenerator div{
+  max-width: 400px;
+}
+
+#randomProjectGenerator img{
+  display: inline-block;
+  max-width: 100%;
+}
+
+#websiteDescription {
+  text-align: center;
+  width: 400px;
+}
+
+#websiteRetreiver{
+  display: inline-block;
+  text-align: center;
+}
+
+#generateProject{
+  margin-top: 7px;
+  width: 100%;
+  height: 50px;
+}
+
+
+footer {
+  color: white;
+  position: relative;
+  margin-left: 40px;
+  font-size: 1.4rem;
+}
+
+a{
+  color: white;
+}
+
+#aboutMe{
+  background-image: url("../images/desertProfilePic.jpeg");
+  background-position: 100% 90%;
+  padding: 50px 0 130px;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+#aboutMe h1{
+  display: inline-block;
+  font-size: 3.5rem;
+  background-color: rgb(0, 0, 0, 0.7);
+  width: 50%;
+}
+
+#history p{
+  padding: 20px 20px;
+  font-size: 1.7rem;
+  margin: 0px 70px 0;
+  background-color: rgb(0, 0, 0, 0.7);
+}
+
+/* media query styling for the about me page */
+@media screen and (max-width: 1002px) {
+  #aboutMe{
+    background-size: cover;
+  }
+
+  #aboutMe h1{
+    width: 90%;
+  }
+
+  #aboutMe p{
+    margin-left: 2.5%;
+    width: 90%;
+  }
+}
